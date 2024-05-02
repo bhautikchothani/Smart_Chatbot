@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Smart ChatBoat </title>
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/styles.css' %}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{% static '../static/images/Chatbot.webp' %}" alt="Logo" class="logo-image" onclick="location.reload()">
+        <h1>Chatbot</h1>
+    </div>
+    <div id="completion" class="scrollable"></div>
+    <form id="messageForm" class="fixed-bottom">
+        {% csrf_token %}
+        <label for="message">Enter Message:</label><br><br>
+        <input type="text" id="message" name="message" placeholder="Type your message..."><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    
+    <script src="{% static "../static/js/script.js" %}"> </script>
+</body>
+
+</html>

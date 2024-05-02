@@ -1,0 +1,2 @@
+Fast Api - uvicorn --port 8050 main:app --reload
+Django Project - python3 manage.py  runserver
