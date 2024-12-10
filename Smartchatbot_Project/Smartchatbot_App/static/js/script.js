@@ -1,23 +1,3 @@
-    // document.getElementById("message").addEventListener("keypress", async function(event) {
-    //     if (event.key === "Enter") {
-    //         event.preventDefault(); // Prevent the default form submission
-    //         const formData = new FormData(document.getElementById("messageForm"));
-    //         const response = await fetch("/chat/completions/", {
-    //             method: "POST",
-    //             body: formData
-    //         });
-    //         console.log("Response:", response); // Log the response object
-    //         const data = await response.json();
-    //         console.log("Response Data:", data);
-    //         if (response.ok) {
-    //             document.getElementById("completion").innerText = data.completion;
-    //         } else {
-    //             document.getElementById("completion").innerText = data.error || "An error occurred.";
-    //         }
-    //     }
-    // });
-
-
     document.getElementById("messageForm").addEventListener("submit", async function(event) {
         event.preventDefault(); // Prevent the default form submission
         const formData = new FormData(this);
