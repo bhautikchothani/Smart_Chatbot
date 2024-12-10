@@ -6,10 +6,6 @@ app/__pycache__/
 __pycache__/
 config.json/
 .env/
-<<<<<<< HEAD
-
-=======
->>>>>>> 6181efa56c04c7b91ec5e149e56ad4bf7a8d20af
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
